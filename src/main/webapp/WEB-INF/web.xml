@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
+  <display-name>planEEZy</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>organizerServlet</display-name>
+    <servlet-name>organizerServlet</servlet-name>
+    <servlet-class>com.planEEZy.organizerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>organizerServlet</servlet-name>
+    <url-pattern>/organizerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>organizerProfileDelete</display-name>
+    <servlet-name>organizerProfileDelete</servlet-name>
+    <servlet-class>com.planEEZy.organizerProfileDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>organizerProfileDelete</servlet-name>
+    <url-pattern>/organizerProfileDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>organizerProfileUpdate</display-name>
+    <servlet-name>organizerProfileUpdate</servlet-name>
+    <servlet-class>com.planEEZy.organizerProfileUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>organizerProfileUpdate</servlet-name>
+    <url-pattern>/organizerProfileUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Avenue</display-name>
+    <servlet-name>Avenue</servlet-name>
+    <servlet-class>com.planEEZy.Avenue</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Avenue</servlet-name>
+    <url-pattern>/Avenue</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>signinservlet</display-name>
+    <servlet-name>signinservlet</servlet-name>
+    <servlet-class>com.planEEZy.signinservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signinservlet</servlet-name>
+    <url-pattern>/signinservlet</url-pattern>
+  </servlet-mapping>
+</web-app>
